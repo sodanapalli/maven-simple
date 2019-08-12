@@ -36,6 +36,13 @@
           <target>1.7</target>
         </configuration>
       </plugin>
+      	<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<warName>${project.artifactId}</warName>
+				</configuration>
+			</plugin>
       
       <plugin>  <!-- Create sources.jar -->
             <groupId>org.apache.maven.plugins</groupId>
